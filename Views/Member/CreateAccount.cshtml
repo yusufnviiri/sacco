@@ -1,0 +1,32 @@
+﻿@model ODataManager
+<div class="container">
+    <h5 class="my-2">Member Deposit Form</h5>
+    <form method="post">
+        <input asp-for="@Model.MemberId" hidden/>
+        <input asp-for="@Model.Deposit.DepositId" hidden />
+
+
+        <div class="row gap-1 label_div">
+            <label asp-for="@Model.Member.FirstName" class="col-4">First Name</label>
+            <label asp-for="@Model.Member.LastName" class="col-4">Last Name</label>
+          
+        </div>
+        <div class="row gap-1 input_div">
+            <input asp-for="@Model.Member.FirstName" class="col-4" disabled />
+            <input asp-for="@Model.Member.LastName" class="col-4"  disabled/>          
+        </div>
+        <div class="row gap-1 label_div">
+            <label asp-for="@Model.Deposit.Amount" class="col-4">Amount</label>
+            <label asp-for="@Model.Deposit.Balance" class="col-4">Current Balance</label>
+         
+        </div>
+        <div class="row gap-1 input_div">
+            <input asp-for="@Model.Deposit.Amount" class="col-4" />
+            <input asp-for="@Model.Deposit.Balance" class="col-4"  disabled/>
+        </div>
+        <div class="row gap-1 input_div">
+
+        <input type="submit" class="submit_btn  col-2" value="Save" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - sacco</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/sacco.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+       
+      <menu >
+            <ul>
+           
+                <li>
+                    <a class=" " asp-area="" asp-controller="Member" asp-action="Create">New Member</a>
+                </li>
+                <li>
+                    <a class="" asp-area="" asp-controller="Member" asp-action="Index">
+                        Members
+                    </a>
+                </li>
+                <li>
+                    <a class="" asp-area="" asp-controller="Student" asp-action="CreateCourse">
+                      New Course
+                    </a>
+                </li>             
+                <li>
+                    <a class="  " asp-area="" asp-controller="Staff" asp-action="Index">Staff Members</a>
+                </li>
+                <li>
+                    <a class="  " asp-area="" asp-controller="Staff" asp-action="Create">New Staff</a>
+                </li>
+                <li>
+                    <a class="  " asp-area="" asp-controller="Library" asp-action="Index">Library Items</a>
+                </li>
+                <li>
+                    <a class="  " asp-area="" asp-controller="Library" asp-action="Create">New Library Item</a>
+                </li>
+                <li>
+                    <a class="  " asp-area="" asp-controller="Library" asp-action="LibUsers"> Library Users</a>
+                </li>
+
+            </ul>
+
+        </menu>
+    </header>
+    <div class="wrapper">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

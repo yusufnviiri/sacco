@@ -1,0 +1,49 @@
+﻿@model Member
+<div class="container">
+    <h5 class="my-2">Sacco Member Registartion Form</h5>
+    <form method="post">
+        <div class="row gap-1 label_div">
+            <label asp-for="@Model.FirstName" class="col-3">First Name</label>
+            <label asp-for="@Model.LastName" class="col-3">Last Name</label>
+            <label asp-for="@Model.Occupation" class="col-3">Occupation</label>
+            <label asp-for="@Model.Gender" class="col-2">Gender</label>
+        </div>
+        <div class="row gap-1 input_div">
+            <input asp-for="@Model.FirstName" class="col-3" />
+            <input asp-for="@Model.LastName" class="col-3" />
+            <input asp-for="@Model.Occupation" class="col-3"/>
+            <select asp-for="@Model.Gender" class="col-2">
+                <option>...Select...</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+        <div class="row gap-1 label_div">
+            <label asp-for="@Model.District" class="col-3">District</label>
+            <label asp-for="@Model.Village" class="col-3">Village</label>
+            <label asp-for="@Model.BirthDate" class="col-3">Date of Birth</label>
+            <label asp-for="@Model..Age" class="col-2">Age</label>
+        </div>
+        <div class="row gap-1 input_div">
+            <input asp-for="@Model.District" class="col-3" />
+            <input asp-for="@Model.Village" class="col-3" />
+            <input type="date" placeholder="2024-01-03" asp-for="@Model.BirthDate" class="col-3" />
+            <input type="number" asp-for="@Model.Age" class="col-2" />
+        </div>
+        <div class="row gap-1 label_div">
+            <label asp-for="@Model.Contact" class="col-3">Contact</label>
+            <label asp-for="@Model.NextOfKin" class="col-3">Next Of Kin</label>
+            <label asp-for="@Model.ContactNextOfKin" class="col-3">Next Of Kin Contact</label>
+        </div>
+        <div class="row gap-1 input_div">
+            <input asp-for="@Model.Contact" class="col-3" />
+            <input asp-for="@Model.NextOfKin" class="col-3" />
+            <input asp-for="@Model.ContactNextOfKin" class="col-3"/>                
+           
+        </div>
+<div class="row gap-1 input_div">
+
+        <input type="submit" class="submit_btn  col-2" value="Save" />
+        </div>
+    </form>
+</div>

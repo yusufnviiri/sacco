@@ -1,0 +1,163 @@
+
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.form-floating input {
+    height: 10%;
+}
+
+tbody tr {
+    font-size: 10px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+thead tr, .table_bold td {
+    font-size: 10px;
+    color: forestgreen;
+    font-weight: bold;
+}
+
+td, th {
+    white-space: nowrap;
+}
+
+menu ul, .student_actions ul {
+    display: flex;
+    width: 100%;
+}
+
+.student_actions ul {
+    width: 90%;
+    margin: auto;
+}
+
+    menu ul li, .student_actions ul li {
+        list-style: none;
+        margin-right: 0.3em;
+    }
+
+        menu ul li a, menu ul li a span, .student_actions ul li a {
+            list-style: none;
+            font-size: 0.55em;
+            background-color: darkslategrey;
+            white-space: nowrap;
+            color: yellowgreen;
+            padding: 0.3em 0.3em;
+            border-radius: 0.6em;
+        }
+
+.search_form, .search_formR {
+    width: 40%;
+    float: left;
+    position: absolute;
+    right: 1em;
+    top: 0.74em;
+}
+
+.search_formR {
+    top: 0.74em;
+}
+
+.search_form input {
+    font-size: 0.6em;
+    margin-right: 4px
+}
+
+.search_form label {
+    font-size: 0.6em;
+}
+
+.submit {
+    background-color: darkslategrey;
+    color: yellow;
+}
+
+.submit_link, .submit_btn, .submit_btnC {
+    background-color: darkslategrey;
+    color: yellow;
+    padding: 0.3em 0.5em;
+    border-bottom-left-radius: 1em;
+    margin-top: 0.5em;
+    font-size: 0.8em;
+}
+
+.submit_btn {
+    border-radius: 0.4em;
+    padding-bottom: 1.5em;
+}
+
+.submit_btnC {
+    background-color: darkslategrey;
+    color: yellow;
+    padding: 0.3em 0.5em;
+    border-bottom-left-radius: 1em;
+    padding-bottom: 1.5em;
+    margin: 0;
+}
+
+input, select, label {
+    font-size: 10px;
+    height: 2em;
+    font-weight: 700;
+    padding-left: 1px;
+}
+
+.guardian_details label {
+    font-weight: 900;
+}
+
+.input_div {
+    margin-bottom: 0.1em;
+}
+
+h5 {
+    color: darkslategrey;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: auto;
+    font-family: Gabriola;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.wrapper{
+    width:95%;
+    margin:auto;
+}
+
+.container, form {
+    width: 100%;
+    margin: auto;
+}
+
+.student_details {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+.approved{
+    color:green;
+    font-weight:bolder;
+}
+.pending {
+    color: red;
+    font-weight: bolder;
+}
